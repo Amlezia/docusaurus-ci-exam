@@ -1,7 +1,8 @@
 import sidebars from './sidebars.json' with { type: 'json' };
 
 export default {
-
+  title: 'Docusaurus',
+  url: 'https://amlezia.github.io/docusaurus-ci-exam/',
   baseUrl: '/',
   presets: [
     [
