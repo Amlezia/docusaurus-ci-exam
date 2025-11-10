@@ -30,6 +30,9 @@ jobs:
         with:
           node-version: '20'
       
+      - name: Install docurausus package globally      
+        run: npx create-docusaurus@latest docusaurus classic
+      
       - name: Install dependencies
         run: npm ci
 
