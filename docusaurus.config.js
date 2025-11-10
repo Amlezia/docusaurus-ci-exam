@@ -1,4 +1,4 @@
-import sidebars from './sidebars.json' assert { type: 'json' };
+import sidebars from './sidebars.json' with { type: 'json' };
 
 export default {
 
