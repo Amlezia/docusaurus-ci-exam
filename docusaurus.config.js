@@ -1,4 +1,7 @@
+import sidebars from './sidebars.json' assert { type: 'json' };
+
 export default {
+
   baseUrl: '/',
   presets: [
     [
@@ -8,7 +11,7 @@ export default {
           // Docs folder path relative to website dir.
           path: 'src/pages',
           // Sidebars file relative to website dir.
-          sidebarPath: require.resolve('sidebars.json'),
+          sidebarPath: sidebars,        
         },
       },
     ],
