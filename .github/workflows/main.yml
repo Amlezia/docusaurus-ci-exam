@@ -28,7 +28,6 @@ jobs:
         with:
           node-version: '20'
       
-      - name: Install docurausus package globally
-        steps:
-          - run: npx create-docusaurus@latest my-website classic
-          - run: npm run build
+      - name: Install docurausus package globally      
+        run: npx create-docusaurus@latest my-website classic
+      - run: npm run build
