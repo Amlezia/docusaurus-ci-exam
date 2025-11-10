@@ -1,19 +1,16 @@
-module.exports = {
+export default {
+  baseUrl: '/',
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
           // Docs folder path relative to website dir.
-          path: '../docs',
+          path: 'src/pages',
           // Sidebars file relative to website dir.
           sidebarPath: require.resolve('sidebars.json'),
         },
       },
     ],
   ],
-};
-
-export default {
-  baseUrl: '/',
 };
