@@ -45,7 +45,12 @@ jobs:
 
       - name: Build Docusaurus
         run: npm run build
-    page-html-docusaurus:
+  page-html-docusaurus:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
       - name: Generate HTML page with docusaurus
         run: |
           mkdir -p pages-content
